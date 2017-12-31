@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div class="menu">
+      <h2 class="menu__title">Components</h2>
       <router-link to="select-demo" class="menu__link">Select</router-link>
       <router-link to="tabs-demo" class="menu__link">Tabs</router-link>
     </div>
@@ -23,8 +24,10 @@ export default {
     position: absolute;
     left: 0;
     border: 1px solid #7f8c8d;
-    padding: 20px 0;
     height: 100vh;
+    &__title {
+      padding: 10px 30px;
+    }
     &__link {
       display: block;
       padding: 10px 30px;
