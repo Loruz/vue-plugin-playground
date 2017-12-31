@@ -9,9 +9,12 @@
         inventore iure laboriosam libero nesciunt non nostrum omnis
         provident quis quisquam reprehenderit repudiandae vel voluptates?
       </Tab>
-      <Tab name="duper">
+      <Tab name="duper" :active="true" >
         <h3>Just duper text</h3>
       </Tab>
+    <Tab name="extra" >
+      <h3>Extra text</h3>
+    </Tab>
   </TabList>
 
 </div>
@@ -20,9 +23,15 @@
   import Tab from './Tab.vue'
   import TabList from './TabList.vue'
   export default {
+    data() {
+      return {
+      }
+    },
     components: {
       Tab,
       TabList
+    },
+    mounted() {
     }
   }
 </script>

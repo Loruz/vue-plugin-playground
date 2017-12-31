@@ -58,7 +58,12 @@
     },
     mounted () {
       if (this.tabs.length) {
-        this.selectTab(this.tabs[0].hash);
+        let activeTab = this.tabs.find(tab => tab.active)
+        if (activeTab) {
+          this.selectTab(activeTab.hash);
+        } else {
+          this.selectTab(this.tabs[0].hash);
+        }
       }
     }
   }
