@@ -13,7 +13,7 @@
         <h3>Just duper text</h3>
       </Tab>
     <Tab name="extra" >
-      <h3>Extra text</h3>
+    <h3>Extra text</h3>
     </Tab>
   </TabList>
 

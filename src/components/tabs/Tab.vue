@@ -1,7 +1,7 @@
 <template>
     <div
       class="tab-content"
-      :hidden="!isActive"
+      v-if="isActive"
       v-show="isVisible"
       :id="hash"
       role="tabpanel"
@@ -27,6 +27,10 @@
       active: {
         type: Boolean,
         default: false
+      },
+      classes: {
+        type: [String, Array],
+        default: null
       }
     },
     data () {
@@ -38,6 +42,9 @@
     computed: {
       header () {
         return this.name
+      },
+      classList () {
+        return this.classes
       },
       hash () {
         if (this.isDisabled) {
